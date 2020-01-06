@@ -1,0 +1,49 @@
+Tropical cyclones, especially fully developed hurricanes,
+exhibit quasi-stationary features with respect to the position of the storm center.
+Such features include the eye-wall cloud, precipitation bands, and wind speed maxima.
+Forecast model analysis and verification can thus benefit from statistics
+aggregated on a moving range-azimuth grid centered on points along the storm track.
+In this poster we will describe a new TC moving grid analysis tool
+developed within the Developmental Testbed Center (DTC)
+Model Evaluation Tools (MET) software suite.
+MET is highly configurable and provides a variety of verification techniques
+including standard verification scores comparing gridded model data
+to gridded and point observations or re-analyses.
+MET was chosen as the core of the National Oceanic and Atmospheric Administration (NOAA)
+Unified Forecast System (UFS).
+The larger system, METplus, includes the core MET tools,
+python wrappers for automation over verification tasks,
+a results database (METdb),
+aggregation tools (METcalcpy),
+and visualization tools (METplotpy, METviewer, METexpress).
+\newline
+
+This MET-TC tool supports several re-gridding methods,
+storm track selection, and data aggregation or stratification based
+on user specified criteria such as forecast initialization time.
+Derived fields such as azimuthal means and the tangential
+and radial wind components are computed.
+The moving grid may also be rescaled along the track.
+For example, the radial grid spacing may be set
+as a factor of the radius of maximum winds.
+\newline
+
+As a case study we will present a 12-day (Sep. 28 – Oct. 9, 2016) analysis
+of the Finite-Volume Cubed-Sphere 3 Global Forecast System (FV3GFS) forecasts
+for Hurricane Matthew,
+which intensified to a category 5 hurricane in the Caribbean Sea
+and tracked along the southeast coast of the US,
+where it continued to produce heavy rainfall and widespread flooding.
+This dataset was created as a baseline case
+for the Model Evaluation for Research Innovation Transition (MERIT) project,
+with storm tracks generated from the Geophysical Fluid Dynamics Laboratory (GFDL)
+vortex tracker.
+The METplus modules, METcalcpy and METplotpy,
+are used to examine the evolution of various surface
+and pressure level quantities such as sea-level pressure,
+precipitation, and surface and upper air wind fields.
+Radial-vertical cross sections of azimuthally averaged quantities are also computed;
+in particular, example statistics
+and visualizations are generated for tangential winds,
+radial and vertical mass and water vapor fluxes,
+and equivalent potential temperature.
