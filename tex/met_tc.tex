@@ -60,7 +60,7 @@
 \usepackage{DejaVuSans}
 
 %----------------------------------------------------------------------------------------
-% TITLE SECTION 
+% TITLE SECTION
 %----------------------------------------------------------------------------------------
 
 \title{
@@ -141,7 +141,14 @@ Research Applications Lab} % Institution(s)
 %----------------------------------------------------------------------------------------
 
 \begin{alertblock}{MET TC Tools}
-
+\begin{itemize}
+\item {\bf TC Pairs} - Match TC forecast with reference TC data
+(e.g. best track)
+\item {\bf TC Stat} - Filter and create summary statistics
+for TC Pairs output
+\item {\bf TC Dland} - Compute gridded distance to land,
+for use in TC Pairs and TC Stat filters
+\end{itemize}
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
@@ -151,7 +158,7 @@ Research Applications Lab} % Institution(s)
 \begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
 
 %----------------------------------------------------------------------------------------
-% TC-RMW
+% TC RMW
 %----------------------------------------------------------------------------------------
 
 \begin{block}{TC RMW}
@@ -179,13 +186,13 @@ range intervals a multiple of the radius of maximum winds (RMW)
 \begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
 
 %----------------------------------------------------------------------------------------
-% RMW-Analysis
+% RMW Analysis
 %----------------------------------------------------------------------------------------
 
 \begin{block}{RMW Analysis}
 
 \begin{itemize}
-\item Process a collection of TC-RMW of NetCDF output fields,
+\item Process a collection of TC RMW of NetCDF output fields,
 aggregate statistics on a common range (RMW) - azimuth grid
 \item Filter collection by ATCF track information, e.g. category, size,
 position, valid time range, lead time, min pressure, max wind, \ldots
