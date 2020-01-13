@@ -225,49 +225,52 @@ position, valid time range, lead time, min pressure, max wind, \ldots
 
 \begin{column}{\onecolwid} % The third column
 
-\begin{block}{TC RMW Configuration File}
+% \begin{block}{Example Configuration File}
+% \begin{lstlisting}[language=Python]
+% data = {
+%     field = [
+%         {
+%           name = "PRMSL";
+%           level = ["L0"];
+%         },
+%         {
+%           name = "TMP";
+%           level = ["P1000", "P950", "P900", ...];
+%         },
+%         {
+%           name = "UGRD";
+%           level = ["P1000", "P950", "P900", ...];
+%         },
+%         ...
+%     ];
+% }
+% regrid = {
+%     method     = BILIN;
+%     width      = 2;
+%     shape      = SQUARE;
+% }
+% n_range = 100;
+% n_azimuth = 180;
+% rmw_scale = 0.2;
+% \end{lstlisting}
+% \end{block}
 
-\begin{lstlisting}[language=Python]
-data = {
-    field = [
-        {
-          name = "PRMSL";
-          level = ["L0"];
-        },
-        {
-          name = "TMP";
-          level = ["P1000", "P950", "P900", ...];
-        },
-        {
-          name = "UGRD";
-          level = ["P1000", "P950", "P900", ...];
-        },
-        ...
-    ];
-}
-regrid = {
-    method     = BILIN;
-    width      = 2;
-    shape      = SQUARE;
-}
-n_range = 100;
-n_azimuth = 180;
-rmw_scale = 0.2;
-\end{lstlisting}
-
-\end{block}
+\begin{figure}
+\includegraphics[width=1.0\linewidth]{../plots/out_mean.pdf}
+\end{figure}
+\begin{figure}
+\includegraphics[width=1.0\linewidth]{../plots/out_std.pdf}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 % REFERENCES
 %----------------------------------------------------------------------------------------
 
-\begin{block}
-
-\nocite{*} % Insert publications even if they are not cited in the poster
-\small{\bibliographystyle{unsrt}
-\bibliography{sample}\vspace{0.75in}}
-
-\end{block}
+% \begin{block}
+% \nocite{*} % Insert publications even if they are not cited in the poster
+% \small{\bibliographystyle{unsrt}
+% \bibliography{sample}\vspace{0.75in}}
+% \end{block}
 
 %----------------------------------------------------------------------------------------
 %	CONTACT INFORMATION
@@ -276,7 +279,7 @@ rmw_scale = 0.2;
 % \setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
 % \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{alertblock}{Contact Information}
+\begin{alertblock}
 
 \begin{itemize}
 \item Web: \href{https://github.com/NCAR/MET}{https://github.com/NCAR/MET}
