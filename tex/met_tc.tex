@@ -68,7 +68,9 @@
 Track-Centered Moving Grids for Tropical Cyclone Forecast Assessment
 in the Model Evaluation Tools (MET) Verification Package} % Poster title
 
-\author{David Fillmore} % Author(s)
+\author{David Fillmore, Tracy Hertneky, Kathryn Newman,
+Evan Kalina, Randy Bullock, Mrinal Biswas,
+John Halley Gotway, Tara Jensen} % Author(s)
 
 \institute{National Center for Atmospheric Research,
 Research Applications Lab} % Institution(s)
@@ -223,7 +225,7 @@ position, valid time range, lead time, min pressure, max wind, \ldots
 
 \begin{column}{\onecolwid} % The third column
 
-\begin{block}
+\begin{block}{TC RMW Configuration File}
 
 \begin{lstlisting}[language=Python]
 data = {
@@ -244,9 +246,8 @@ data = {
     ];
 }
 regrid = {
-    method     = NEAREST;
-    width      = 1;
-    vld_thresh = 0.5;
+    method     = BILIN;
+    width      = 2;
     shape      = SQUARE;
 }
 n_range = 100;
